@@ -14,7 +14,8 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-}
+    font-family: 'Courier Prime', monospace;
+  }
   
 .custom-button:hover {
   background-color: white;
