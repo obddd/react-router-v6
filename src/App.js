@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Provider>
       <Router>
-        <Header />
+      <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
