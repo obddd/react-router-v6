@@ -4,8 +4,8 @@ import CustomButton from '../custom-button/custom-button.component';
 import { Context } from '../../context/GlobalContext'
 
 const CollectionItem = ({ item }) => {
-    const { name, imageUrl, price } = item;
     const { addItem } = useContext(Context)
+    const { name, imageUrl, price } = item;
     return (
         <div className='collection-item'>
             <div 
