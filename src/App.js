@@ -10,6 +10,7 @@ import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header/header.component';
 
 import { Provider } from './context/GlobalContext';
+import NotFound from './components/not-found/not-found.component';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>
     </Provider>
