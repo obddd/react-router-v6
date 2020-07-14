@@ -1,21 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+
 import HomePage from './pages/homepage/homepage.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header/header.component';
 
 import { Provider } from './context/GlobalContext';
 
-
 const App = () => {
   return (
     <Provider>
       <Router>
         <Header />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/checkout" component={CheckoutPage} />
-        </Switch>
+        <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
+        </Routes>
       </Router>
     </Provider>
   );
