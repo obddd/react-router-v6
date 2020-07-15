@@ -1,6 +1,6 @@
 .collection-item {
     width: 22vw;
-    display: flex;
+    margin: 5% auto;
     flex-direction: column;
     height: 350px;
     align-items: center;
@@ -18,6 +18,7 @@
     opacity: 0.7;
     position: absolute;
     top: 260px;
+    left: 30px;
     display: none;
   }
   .collection-item:hover .image {
@@ -33,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    text-decoration: none;
   }
   .collection-item .collection-footer .name {
     width: 90%;

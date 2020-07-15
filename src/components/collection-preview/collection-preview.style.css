@@ -5,13 +5,13 @@
     text-align: center;
 }
 
-.title {
+.collection-preview .title {
   font-size: 28px;
   margin-bottom: 25px;
 }
 
-.preview {
+.collection-preview .preview {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-  
